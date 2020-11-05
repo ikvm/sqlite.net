@@ -11,7 +11,7 @@
     <RootNamespace>SQLiteClientTests</RootNamespace>
     <AssemblyName>SQLiteClientTests</AssemblyName>
     <StartupObject>SQLiteClientTests.SQLiteClientTestDriver</StartupObject>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -78,8 +78,8 @@
   </Target>
   -->
   <ItemGroup>
-    <ProjectReference Include="..\..\System.Data.SQLite\System.Data.SQLite.csproj">
-      <Project>{F1653F20-D47D-4F29-8C55-3C835542AF5F}</Project>
+    <ProjectReference Include="..\..\src\System.Data.SQLite\System.Data.SQLite.csproj">
+      <Project>{f1653f20-d47d-4f29-8c55-3c835542af5f}</Project>
       <Name>System.Data.SQLite</Name>
     </ProjectReference>
   </ItemGroup>

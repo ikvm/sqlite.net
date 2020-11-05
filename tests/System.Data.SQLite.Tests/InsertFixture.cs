@@ -12,14 +12,14 @@ namespace System.Data.SQLite.Tests
 	{
 		private string _filename;
 
-		[TestFixtureSetUp]
+		[SetUp]
 		public void Setup()
 		{
 			_filename = Guid.NewGuid().ToString() + ".db3";
 			SQLiteConnection.CreateFile(_filename);
 		}
 
-		[TestFixtureTearDown]
+		[TearDown]
 		public void CleanUp()
 		{
 			if(File.Exists(_filename))

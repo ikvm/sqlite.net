@@ -27,7 +27,7 @@ namespace System.Data.SQLite.Tests
 		}
 
 		[Test()]
-		[ExpectedException(typeof(SQLiteException))]
+		//[ExpectedException(typeof(SQLiteException))]
 		public void ViolateUniqueTableConstraintTest()
 		{	
 			using(var con = new SQLiteConnection("Data Source=:memory:"))
@@ -61,7 +61,7 @@ namespace System.Data.SQLite.Tests
 		}
 
 		[Test()]
-		[ExpectedException(typeof(SQLiteException))]
+		//[ExpectedException(typeof(SQLiteException))]
 		public void ViolatePrimaryKeyTableConstraintTest()
 		{	
 			using(var con = new SQLiteConnection("Data Source=:memory:"))
@@ -95,7 +95,7 @@ namespace System.Data.SQLite.Tests
 		}
 
 		[Test()]
-		[ExpectedException(typeof(SQLiteException))]
+		//[ExpectedException(typeof(SQLiteException))]
 		public void ViolateCheckTableConstraintTest()
 		{	
 			using(var con = new SQLiteConnection("Data Source=:memory:"))
